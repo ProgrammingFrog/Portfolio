@@ -12,11 +12,11 @@
   <video autoplay loop muted plays-inline class="back-vid">
     <source src="images/cgiwater.mp4" type="video/mp4">
   </video>
-  <section class="main-section">
+  <section id="home" class="main-section">
     <nav>
       <!-- <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #1761c2;">Pontus </span>Noaksson</h1> -->
       <ul>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#">Home </a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#home">Home </a></li>
         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#projects">Projects</a></li>
         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#skills">Skills</a></li>
         <!-- <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Content</a></li> -->
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <div class="info-sec">
+    <!-- <div class="info-sec">
       <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1600">
         <h1>3+</h1>
         <p>Years of <br> Experience</p>
@@ -58,7 +58,7 @@
         <h1>3+</h1>
         <p>Satisfied <br> Clients</p>
       </div>
-    </div>
+    </div> -->
   </section>
   
   <section id="projects" class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000">
@@ -96,79 +96,80 @@
   <h1>Skills</h1>
   <div class="skills-container">
 
-    <!-- Programming Languages -->
-    <div class="skills-section">
-      <div class="skills-box">
+    <!-- Översta raden: Programming Languages & Backend -->
+    <div class="skills-row">
+      
+      <!-- Programming Languages -->
+      <div class="skills-section">
         <h2>Programming Languages</h2>
         <div class="skill-icons">
-          <div class="skill-item">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-item">
             <img src="images/html-5-svgrepo-com.svg" alt="HTML">
             <span>HTML</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-item">
             <img src="images/css-3-svgrepo-com.svg" alt="CSS">
             <span>CSS</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-item">
             <img src="images/javascript-svgrepo-com.svg" alt="JavaScript">
             <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://www.python.org/" target="_blank" class="skill-item">
             <img src="images/python-svgrepo-com.svg" alt="Python">
             <span>Python</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="skill-item">
             <img src="images/csharp-svgrepo-com.svg" alt="C#">
             <span>C#</span>
-          </div>
+          </a>
         </div>
       </div>
-    </div>
 
-    <!-- Backend & Database -->
-    <div class="skills-section reverse">
-      <div class="skills-box">
+      <!-- Backend & Database -->
+      <div class="skills-section">
         <h2>Backend & Database</h2>
         <div class="skill-icons">
-          <div class="skill-item">
+          <a href="https://nodejs.org/" target="_blank" class="skill-item">
             <img src="images/node-js-svgrepo-com.svg" alt="Node.js">
             <span>Node.js</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://expressjs.com/" target="_blank" class="skill-item">
             <img src="images/logo-dark.svg" alt="Express">
             <span>Express</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://supabase.com/" target="_blank" class="skill-item">
             <img src="images/supabase-logo-icon.svg" alt="Supabase">
             <span>Supabase</span>
-          </div>
+          </a>
         </div>
       </div>
+
     </div>
 
-    <!-- Tools -->
-    <div class="skills-section">
-      <div class="skills-box">
-        <h2>Tools</h2>
+    <!-- Undre raden: Tools & Professional Skills -->
+    <div class="skills-row bottom-row">
+      <div class="skills-section">
+        <h2>Tools & Professional Skills</h2>
         <div class="skill-icons">
-          <div class="skill-item">
+          <a href="https://git-scm.com/" target="_blank" class="skill-item">
             <img src="images/git-svgrepo-com.svg" alt="Git">
             <span>Git</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://www.adobe.com/" target="_blank" class="skill-item">
             <img src="images/adobe-svgrepo-com.svg" alt="Adobe">
             <span>Adobe</span>
-          </div>
-          <div class="skill-item">
+          </a>
+          <a href="https://www.figma.com" target="_blank" class="skill-item">
             <img src="images/figma-svgrepo-com.svg" alt="Figma">
             <span>Figma</span>
-          </div>
+          </a>
         </div>
       </div>
     </div>
 
   </div>
-</section>
+  </section>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

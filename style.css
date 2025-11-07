@@ -125,7 +125,7 @@ nav a:hover ,
   box-shadow: 0 0 10px #1761c2;
   font-size: 16px;
   font-weight: 900;
-  color: #0e1217;
+  color: #ffffff;
   cursor: pointer;
   margin-right: 15px;
   transition: 0.3s;
@@ -323,46 +323,52 @@ nav a:hover ,
   margin-bottom: 60px;
 }
 
+/* Container för alla rows */
 .skills-container {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  align-items: center;
+  gap: 60px;
 }
 
-.skills-section {
+/* Varje rad med underkategorier */
+.skills-row {
   display: flex;
-  justify-content: flex-start;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.skills-section.reverse {
-  justify-content: flex-end;
+/* Undre raden centrerad */
+.skills-row.bottom-row {
+  justify-content: center;
 }
 
-.skills-box {
-  background: rgba(20, 25, 35, 0.85);
-  border: 1px solid #1761c2;
-  border-radius: 20px;
-  padding: 40px 60px;
-  width: 70%;
-  box-shadow: 0 0 20px rgba(23, 97, 194, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Varje underkategori */
+.skills-section {
+  background: none; /* ingen box runt hela underkategorin */
+  border: none;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.skills-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 30px #1761c2;
-}
-
-.skills-box h2 {
-  font-size: 32px;
-  margin-bottom: 25px;
+/* Rubrik för varje underkategori ovanför skills */
+.skills-section h2 {
+  font-size: 28px;
   color: #5395f8;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Små boxar runt varje skill */
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .skill-item {
@@ -372,6 +378,7 @@ nav a:hover ,
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 10px 20px;
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -410,15 +417,17 @@ nav a:hover ,
     margin-top: 20px;
   }
 
-  .skill, .skill.reverse {
+  .skills-row {
     flex-direction: column;
-    text-align: center;
+    gap: 30px;
   }
-  .skill img, .skill-text {
-    width: 100%;
+
+  .skills-section h2 {
+    font-size: 24px;
   }
-  .skill-text {
-    margin-top: 20px;
+
+  .skill-item span {
+    font-size: 16px;
   }
 }
 
@@ -431,8 +440,6 @@ nav a:hover ,
     margin-top: 30px;
   }
 }
-
-
 
 @media (max-width: 950px) {
 
@@ -472,21 +479,20 @@ nav a:hover ,
   .hero h1{
     font-size: 40px;
   }
-   .skills-section h2 {
-    font-size: 1.6rem;
-    text-align: center;
+  .skills h1 {
+    font-size: 40px;
   }
 
-  .skill-category {
-    padding: 15px;
-  }
-
-  .skill-item p {
-    font-size: 0.8rem;
+  .skills-section h2 {
+    font-size: 20px;
   }
 
   .skill-item img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .skill-item span {
+    font-size: 14px;
   }
 }
