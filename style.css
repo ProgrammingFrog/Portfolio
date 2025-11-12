@@ -17,6 +17,11 @@ body {
   padding: 30px 0;
 }
 
+html {
+  scroll-padding-top: 100px; /* Justera 100px till ungefär samma höjd som din navbar */
+  scroll-behavior: smooth;   /* Smidig scroll när man klickar på menyn */
+}
+
 .back-vid{
   position: fixed;
   top: 0;
@@ -398,6 +403,90 @@ nav a:hover ,
   color: white;
 }
 
+.contact {
+  width: 90%;
+  max-width: 1400px;
+  padding: 80px 10%;
+  margin-bottom: 60px;
+  color: white;
+  text-align: center;
+  background: rgba(74, 208, 238, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px 1px #1761c2;
+}
+
+.contact h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #1761c2, #53d7f8, #6070fd, #5bb0ff, #1761c2);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-buttons .btn {
+  font-size: 18px;
+  padding: 15px 35px;
+  border-radius: 40px;
+}
+
+.contact-buttons .ul-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-buttons .ul-icons a {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #1761c2;
+  transition: 0.3s;
+  color: #1761c2;
+}
+
+.contact-buttons .ul-icons a:hover {
+  background-color: #1761c2;
+  color: #0e1217;
+  box-shadow: 0 0 15px #1761c2;
+}
+
+.design-row {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.design-row .skills-section {
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  font-size: 16px;
+}
+
+.footer p {
+  margin: 0;
+}
+
 /* Responsivitet */
 @media (max-width: 900px) {
   .project {
@@ -428,6 +517,23 @@ nav a:hover ,
 
   .skill-item span {
     font-size: 16px;
+  }
+  .contact h1 {
+    font-size: 40px;
+  }
+
+  .contact p {
+    font-size: 18px;
+  }
+
+  .contact-buttons .btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .contact-buttons .ul-icons a {
+    font-size: 20px;
+    padding: 8px;
   }
 }
 
@@ -494,5 +600,31 @@ nav a:hover ,
 
   .skill-item span {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills-row {
+    justify-content: space-around;
+  }
+
+  .skills-section {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .skills-row.bottom-row {
+    justify-content: space-around;
+  }
+}
+
+/* Extra för mobil: alla på egen rad */
+@media (max-width: 700px) {
+  .skills-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-section {
+    width: 100%;
   }
 }

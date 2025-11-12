@@ -19,7 +19,7 @@
         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#home">Home </a></li>
         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#projects">Projects</a></li>
         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#skills">Skills</a></li>
-        <!-- <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Content</a></li> -->
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -29,7 +29,13 @@
         <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">I'm a  Software Developer</h2>
         <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">Swedish software developer — building clean, creative, and functional digital experiences.</p>
         <div class="Buttons">
-          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1100">pontusnoaksson.dev@gmail.com</button> 
+          <a href="mailto:pontusnoaksson.dev@gmail.com" 
+            class="btn" 
+            data-aos="zoom-in-right" 
+            data-aos-duration="1000" 
+            data-aos-delay="1100">
+            Send Email
+          </a>
           <ul class="ul-icons">
             <li><a href="https://github.com/ProgrammingFrog" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
           </ul>
@@ -37,7 +43,7 @@
       </div>
 
       <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
-        <img src="images/profilepic.jpg" alt="person-img" >
+        <img src="images/Image.jpg" alt="person-img" >
       </div>
     </div>
 
@@ -92,7 +98,7 @@
     </div>
   </section>
   
-  <section class="skills" id="skills">
+  <section class="skills" id="skills" data-aos="fade-up" data-aos-duration="1000">
   <h1>Skills</h1>
   <div class="skills-container">
 
@@ -142,9 +148,12 @@
             <img src="images/supabase-logo-icon.svg" alt="Supabase">
             <span>Supabase</span>
           </a>
+          <a href="https://jekyllrb.com/" target="_blank" class="skill-item">
+            <img src="images/jekyll-svgrepo-com.svg" alt="Jekyll">
+            <span>Jekyll</span>
+          </a>
         </div>
       </div>
-
     </div>
 
     <!-- Undre raden: Tools & Professional Skills -->
@@ -156,13 +165,60 @@
             <img src="images/git-svgrepo-com.svg" alt="Git">
             <span>Git</span>
           </a>
-          <a href="https://www.adobe.com/" target="_blank" class="skill-item">
-            <img src="images/adobe-svgrepo-com.svg" alt="Adobe">
-            <span>Adobe</span>
+          <a href="https://www.selenium.dev/" target="_blank" class="skill-item">
+            <img src="images/selenium-svgrepo-com.svg" alt="Selenium">
+            <span>Selenium</span>
           </a>
+          <a href="https://www.arduino.cc/" target="_blank" class="skill-item">
+            <img src="images/arduino-svgrepo-com.svg" alt="Arduino">
+            <span>Arduino</span>
+          </a>
+          <a href="https://dictionary.cambridge.org/dictionary/english/collaboration" target="_blank" class="skill-item">
+            <img src="images/group-svgrepo-com.svg" alt="Team collaboration">
+            <span>Team Collaboration</span>
+          </a>
+          <a href="https://dictionary.cambridge.org/dictionary/english/problem-solving" target="_blank" class="skill-item">
+            <img src="images/puzzle-toy-svgrepo-com.svg" alt="Problem Solving">
+            <span>Problem Solving</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="skills-section">
+          <h2>Operating Systems</h2>
+          <div class="skill-icons">
+            <a href="https://www.microsoft.com/windows" target="_blank" class="skill-item">
+              <img src="images/windows-svgrepo-com.svg" alt="Windows">
+              <span>Windows</span>
+            </a>
+            <a href="https://www.raspberrypi.com/" target="_blank" class="skill-item">
+              <img src="images/Raspberry_Pi_Logo.svg" alt="Raspbian">
+              <span>Raspbian</span>
+            </a>
+            <a href="https://ubuntu.com/desktop/wsl" target="_blank" class="skill-item">
+              <img src="images/ubuntu-svgrepo-com.svg" alt="WSL Ubuntu">
+              <span>WSL Ubuntu</span>
+            </a>
+            <a href="https://www.debian.org/" target="_blank" class="skill-item">
+              <img src="images/openlogo-nd.svg" alt="Debian">
+              <span>Debian</span>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="skills-row design-row">
+      <div class="skills-section">
+        <h2>Design Software</h2>
+        <div class="skill-icons">
           <a href="https://www.figma.com" target="_blank" class="skill-item">
-            <img src="images/figma-svgrepo-com.svg" alt="Figma">
-            <span>Figma</span>
+            <img src="images/figma-svgrepo-com.svg" alt="Figma"><span>Figma</span>
+          </a>
+          <a href="https://www.adobe.com/" target="_blank" class="skill-item">
+            <img src="images/adobe-svgrepo-com.svg" alt="Adobe"><span>Adobe</span>
+          </a>
+          <a href="https://www.autodesk.com/se/products/fusion-360/overview" target="_blank" class="skill-item">
+            <img src="images/autodesk-fusion-360-logo-png_seeklogo-482400.svg" alt="Fusion 360"><span>Fusion 360</span>
           </a>
         </div>
       </div>
@@ -170,10 +226,24 @@
 
   </div>
   </section>
-
+  <section id="contact" class="contact">
+  <h1 data-aos="fade-up" data-aos-duration="1000">Get in Touch</h1>
+  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    I'm always open to discuss projects, collaborations, or opportunities.
+  </p>
+  <div class="contact-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+    <a href="mailto:pontusnoaksson.dev@gmail.com" class="btn">Email Me</a>
+    <ul class="ul-icons">
+      <li><a href="https://github.com/ProgrammingFrog" target="_blank"><i class='bx bxl-github'></i></a></li>
+    </ul>
+  </div>
+</section>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <footer class="footer">
+  <p>© 2025 Pontus Noaksson. All rights reserved.</p>
+</footer>
 </body>
 </html>
